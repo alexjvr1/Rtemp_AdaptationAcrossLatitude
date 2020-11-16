@@ -11,6 +11,9 @@ Contact at Sanger = James Torrance.
 
 ## 1. Map
 
+These are short SE ddRAD reads generated on HiSeq. I will map to the Reference genome using bwa mem. 
+
+See script [here](). 
 
 
 ## 2. Index
@@ -24,6 +27,22 @@ R.temporaria chrs 1 and 2 are both larger than this max size, so we need to use 
 See BioStars comment [here](https://www.biostars.org/p/111984/)
 
 
-Script [02a_index.bamfiles.sh]()
+```
+/newhome/bzzjrb/R.temp/02a_SE_mapped
+
+##list all bamfiles
+
+ls *bam >> bamfiles
+
+## I can submit a maximum of 100 jobs in parallel per array on the BlueCrystal server, so I need to split the bamfiles into several files with max 100 lines in each
+
+split -l 100 bamfiles
+
+#This creates two files: xaa, xab
+#Modify the script (see link below) to point to each of these in turn
+```
+
+Script [02a_index.bamfiles.sh](https://github.com/alexjvr1/Rtemp_AdaptationAcrossLatitude/blob/main/02a_index.bamfiles.sh)
+
 
 
