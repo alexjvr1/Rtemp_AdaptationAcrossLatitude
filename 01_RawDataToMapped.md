@@ -13,7 +13,22 @@ Contact at Sanger = James Torrance.
 
 These are short SE ddRAD reads generated on HiSeq. I will map to the Reference genome using bwa mem. 
 
-See script [here](). 
+See script [here](https://github.com/alexjvr1/Rtemp_AdaptationAcrossLatitude/blob/main/02a_MapwithBWAmem.ARRAY_SEaa.sh). 
+
+We need to point to all the raw fastq files, but the array script can only run 100 parallel threads at once. First list all the fastq files
+```
+/newhome/bzzjrb/R.temp/SE193
+
+ls *fastq.gz >> SE.names
+
+split -l 100 SE.names
+
+##move to the main folder where we'll run the script. 
+
+cp SE.names* /newhome/bzzjrb/R.temp/
+
+#modify each script to point to each SE.names file in turn. 
+```
 
 
 ## 2. Index
