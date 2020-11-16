@@ -6,7 +6,7 @@ Here we'll use ANGSD to call genotype likelihoods across all 193 SE individuals 
 
 ## 1. Call genotype likelihoods for all 193 individuals
 
-First we'll explore the data by calling genotype likelihoods simultaneously across all individuals using [04b_ANGSD.SE193.sh]()
+First we'll explore the data by calling genotype likelihoods simultaneously across all individuals and all 13 full chromosomes using [02a_ANGSD.SE193.sh](https://github.com/alexjvr1/Rtemp_AdaptationAcrossLatitude/blob/main/02a_ANGSD.SE193.sh)
 
 ```
 /newhome/bzzjrb/R.temp
