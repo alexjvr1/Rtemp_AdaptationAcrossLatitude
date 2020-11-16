@@ -57,7 +57,7 @@ split -l 100 bamfiles
 #Modify the script (see link below) to point to each of these in turn
 ```
 
-Script [02a_index.bamfiles.sh](https://github.com/alexjvr1/Rtemp_AdaptationAcrossLatitude/blob/main/02a_index.bamfiles.sh)
+Script [01a_index.bamfiles.sh](https://github.com/alexjvr1/Rtemp_AdaptationAcrossLatitude/blob/main/01a_index.bamfiles.sh)
 
 
 
